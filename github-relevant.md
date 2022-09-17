@@ -38,7 +38,7 @@ git add -A
 git commit -m "第2次提交"
 ```
 
-> 分支
+> `git`分支
 
 ```
 git checkout -b <branchname>  // 以【当前所在分支】为基础，新建一个分支
@@ -48,4 +48,14 @@ git merge <branchname>        // 合并分支到 main 分支
 git branch -D <branchname>    // 删除指定分支
 ```
 
-在 bbb 分支写了这行话。
+> `git`与`github`远程仓库
+
+```
+// 把本地仓库推到远程github仓库
+git remote add origin https://github.com/Laputa1729/github-relevant.git
+git branch -M main
+git push -u origin main
+
+git push  // 推送
+git pull  // 拉取
+```
