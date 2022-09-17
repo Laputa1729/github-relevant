@@ -47,3 +47,5 @@ git checkout <branchname>     // 切换到指定分支
 git merge <branchname>        // 合并分支到 main 分支
 git branch -D <branchname>    // 删除指定分支
 ```
+
+在 bbb 分支写了这行话。
