@@ -37,3 +37,13 @@ git log --stat  // 查看提交日志
 git add -A
 git commit -m "第2次提交"
 ```
+
+> 分支
+
+```
+git checkout -b <branchname>  // 以 main 分支为基础，新建分支
+git branch                    // 列举出所有分支
+git checkout <branchname>     // 切换到指定分支
+git merge <branchname>        // 合并分支到 main 分支
+git branch -D <branchname>    // 删除指定分支
+```
