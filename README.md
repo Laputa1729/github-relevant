@@ -1,4 +1,4 @@
-**_Last update: 2022-9-17 22:46:42_**
+**_Latest update: 2022-9-17 22:46:42_**
 
 ---
 
@@ -62,12 +62,12 @@ git pull  // 拉取
 
 -   `fatal: unable to access 'https://github.com/Laputa1729/github-relevant.git/': SSL certificate problem: unable to get local issuer certificate`  
     远程服务器上的 SSL 证书未经过第三方机构认证。
-    
-    - **办法：** `git config --global http.sslverify false`，这行命令的影响范围限系统当前用户。
-    
+
+    -   **办法：** `git config --global http.sslverify false`，这行命令的影响范围限系统当前用户。
+
 -   `! [rejected]`  
     `error: failed to push some refs to 'https://github.com/Laputa1729/github-relevant.git'`  
     创建 github 远程仓库，若勾选了`README`或者`LICENSE`，远程仓库会帮你做一次初始提交，这时，本地和远程都有提交记录，故`git push -u origin main`被拒绝。
-    
-    - **办法 1：** `git pull --rebase origin main`，然后再进行上传：`git push -u origin main`。
-    - **办法 2：** 以后创建 github 仓库什么都别勾，保持空仓库，所需依赖文件本地添加再上传。
+
+    -   **办法 1：** `git pull --rebase origin main`，然后再进行上传：`git push -u origin main`。
+    -   **办法 2：** 以后创建 github 仓库什么都别勾，保持空仓库，所需依赖文件本地添加再上传。
