@@ -71,3 +71,41 @@ git pull  // 拉取
 
     -   **办法 1：** `git pull --rebase origin main`，然后再进行上传：`git push -u origin main`。
     -   **办法 2：** 以后创建 github 仓库什么都别勾，保持空仓库，所需依赖文件本地添加再上传。
+
+> **私有仓库`clone`到本地**
+
+1. 如果是新机子第一次使用，配置一下`git`
+
+```
+git config --global user.name "Laputa"
+git config --global user.email "Laputa1729@163.com"
+```
+
+2. 检查 `SSH Key`
+
+```
+cd ~/.ssh
+ls
+// 看是否存在 id_rsa 和 id_rsa.pub 文件，如果存在，说明已经有 SSH Key
+
+// 否则，手动生成
+ssh-keygen -t rsa -C "Laputa1729@163.com"
+```
+
+3. 拷贝 `ssh-rsa`
+
+```
+cat id_rsa.pub
+```
+
+4. `Settings` -> `SSH and GPG keys` -> 新建一个`SSH Key` -> 秘钥粘贴进去
+
+5. 验证是否成功配置`SSH Key`
+
+```
+ssh -T git@github.com
+
+Hi Laputa1729! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+6. `git clone git@github.com:Laputa1729/Laputa.git`
