@@ -72,7 +72,7 @@ git pull  // 拉取
     -   **办法 1：** `git pull --rebase origin main`，然后再进行上传：`git push -u origin main`。
     -   **办法 2：** 以后创建 github 仓库什么都别勾，保持空仓库，所需依赖文件本地添加再上传。
 
-> **私有仓库`clone`到本地**
+> 私有仓库`clone`到本地
 
 1. 如果是新机子第一次使用，配置一下`git`
 
