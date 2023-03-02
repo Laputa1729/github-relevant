@@ -109,3 +109,9 @@ Hi Laputa1729! You've successfully authenticated, but GitHub does not provide sh
 ```
 
 6. `git clone git@github.com:Laputa1729/Laputa.git`
+
+**一般异常**
+
+> `git@github.com: Permission denied (publickey).`
+
+[解决方案](https://blog.csdn.net/helloasimo/article/details/123778112)
